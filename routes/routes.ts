@@ -1,8 +1,9 @@
 import express from "express"
 import Controller from "../controller/Controller"
 const route = express.Router()
-import movieUpload from "../middlewares/validationMovie"
 import validation from "../middlewares/validationMovie"
+import movieUpload from "../middlewares/validationMovie"
+
 
 route.get("/teste", Controller.teste)
 route.post("/postFilm", movieUpload(), validation, Controller.postFilm)
