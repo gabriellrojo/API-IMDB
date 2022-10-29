@@ -9,6 +9,7 @@ server.use(express.json())
 server.use("/", route)
 
 const PORT = process.env.PORT
+console.log(PORT)
 
 server.listen(PORT || 5000, () => {
     console.log(`Estou rodando na porta ${PORT}`)
