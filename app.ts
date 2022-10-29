@@ -10,6 +10,6 @@ server.use("/", route)
 
 const PORT = process.env.PORT
 
-server.listen(PORT, () => {
+server.listen(PORT || 5000, () => {
     console.log(`Estou rodando na porta ${PORT}`)
 })
